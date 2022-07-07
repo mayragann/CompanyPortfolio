@@ -1,0 +1,20 @@
+.home {
+  /* full screen height. */
+  height: 100vh;
+  color: rgb(26, 4, 110);
+  background-color: #d4dcf6c7;
+  position: relative;
+}
+/* before means to add item behind the color, center image, no repeat, and cover the entire area provided */
+.home:before {
+  content: "";
+  background: url("../../Images/zixi-zhou-Ic8B165N1og-unsplash.jpg") no-repeat
+    center center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+
+}
