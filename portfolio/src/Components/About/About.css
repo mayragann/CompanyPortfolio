@@ -1,0 +1,13 @@
+.about-section{
+    height:900px;
+}
+.about-image img {
+    border-radius: 190px;
+    margin-top: 160px;
+    object-fit: cover;
+}
+.about-details {
+    margin-top: 160px;
+    text-align: left;
+    padding: 20px;
+}
