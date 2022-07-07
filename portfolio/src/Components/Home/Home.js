@@ -1,11 +1,22 @@
 import React from "react";
 import "./Home.css";
+import Typewriter from "typewriter-effect";
 
 const Home = () => {
   return (
     <>
       <div className="container-fluid home">
         <div className="container home-content">
+          <h1>
+            <Typewriter
+              options={{
+                strings: ["Web Development", "UI/UX", "Product Marketing", "Mobile App Development", "Digital Marketing", "Customer Service"],
+                autoStart: true,
+                loop: true,
+                delay: 5,
+              }}
+            />
+          </h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
