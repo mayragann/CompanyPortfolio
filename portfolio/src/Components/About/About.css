@@ -11,3 +11,34 @@
     text-align: left;
     padding: 20px;
 }
+
+.about-title h5{
+    text-align: center;
+}
+
+.line{
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: rgb(217, 201, 24);
+    margin: 5px auto;
+}
+
+.card-design{
+    -webkit-box-shadow: 5px 5px 8px 2px rgba(0,0,0,0.34); 
+    box-shadow: 5px 5px 8px 2px rgba(0,0,0,0.34);
+    cursor: pointer;
+}
+.card-design:hover{
+    -webkit-box-shadow: -13px 4px 8px 2px rgba(0,0,0,0.56); 
+    box-shadow: -13px 4px 8px 2px rgba(0,0,0,0.56);
+    transition-duration: 1s;
+}
+.about-list-item{
+    display: flex;
+    padding: 10px ;
+}
+.about-details-icon{
+    padding-right: 10px;
+    color: purple;
+}
