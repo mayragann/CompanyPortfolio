@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <>
       <div className="container-fluid home">
-        <div className="container">
+        <div className="container home-content">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -15,6 +15,7 @@ const Home = () => {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
+          <span className="view-details-home-button">View Details</span>
         </div>
       </div>
     </>

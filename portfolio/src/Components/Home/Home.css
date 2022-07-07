@@ -16,5 +16,34 @@
     left: 0;
     top: 0;
     z-index: -1;
+}
 
+.home-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+}
+
+.view-details-home-button{
+    background-color: #0741ffc7;
+    text-align: center;
+    color:white;
+    width: 50%;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.view-details-home-button:hover {
+    background-color: #ffffff;
+    text-align: center;
+    width: 50%;
+    color:black;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition-duration: 1s;
 }
