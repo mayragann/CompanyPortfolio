@@ -28,13 +28,13 @@ const Testimonial = () => {
             "position": "Node.js Developer"
         },
         {
-            "img":"https://images.unsplash.com/photo-1519704917829-68da6d72c5a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1184&q=80",
+            "img":"https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
             "content": "It's not every day that I come across a super friendly and helpful designer",
             "name": "Janey",
             "position": "Next.JS Developer"
         },
         {
-            "img":"https://images.unsplash.com/photo-1519704917829-68da6d72c5a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1184&q=80",
+            "img":"https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80",
             "content": "It's not every day that I come across a super friendly and helpful designer",
             "name": "Liz",
             "position": "React.js Developer"
@@ -72,7 +72,13 @@ const Testimonial = () => {
         <div className="row">
             {data.map((item,index)=> (
                 <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12"> 
-                    <h1>Data</h1>
+                   
+                    <div className="content-card">
+                        <img src={item.img} alt="Designer"/>
+                        <p>{item.content}</p>
+                        <span className="name">{item.name}</span>
+                        <p>{item.position}</p>
+                    </div>
                 </div>
             ))}
 
