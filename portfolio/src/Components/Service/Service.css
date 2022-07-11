@@ -1,6 +1,35 @@
 .service-section {
     height: 900px;
 }
-.section_title h5{
+.section-title h5{
     text-align: center;
+}
+
+.services{
+    margin-top: 100px;
+    color:black;
+    padding:10px;
+    -webkit-box-shadow: 5px 5px 8px 2px rgba(0,0,0,0.34); 
+    -moz-box-shadow: -13px 4px 8px 2px rgba(0,0,0,0.56); 
+    box-shadow: 5px 5px 8px 2px rgba(0,0,0,0.34);
+    cursor: pointer;
+}
+
+.services:hover{
+    -webkit-box-shadow: -13px 4px 8px 2px rgba(0,0,0,0.56); 
+    -moz-box-shadow: -13px 4px 8px 2px rgba(0,0,0,0.56); 
+    box-shadow: -13px 4px 8px 2px rgba(0,0,0,0.56);
+    transition-duration: 1s;
+    border-left: 3px solid purple;
+    cursor: pointer;
+}
+.list-of-service{
+    text-align: left;
+}
+.service-item-underline{
+    display: block;
+    width:100%;
+    height: 0.1px;
+    margin-bottom: 10px;
+    background-color: blueviolet;
 }
