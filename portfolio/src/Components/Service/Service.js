@@ -63,7 +63,7 @@ const Service = () => {
   ];
   const colors = [
     "#40E0D0",
-    "#DFFF00",
+    "#008080",
     "#DE3163",
     "#CCCCFF",
     "#800000",
