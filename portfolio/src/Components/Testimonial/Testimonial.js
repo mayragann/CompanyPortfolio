@@ -118,7 +118,7 @@ const Testimonial = () => {
 
     ]
 
-    const [showMorePost,setShowMorePost] = useState(6)
+    const [showMorePost,setShowMorePost] = useState(9)
     const loadMore = () => {
         setShowMorePost((prev) => prev + 3);
     };
@@ -126,8 +126,8 @@ const Testimonial = () => {
     <div className='container testimonial-section'>
 
 
-        <div className="section-title">
-            <h5>Testimonial</h5>
+        <div className="section-title" id="testimonials">
+            <h5>Testimonials</h5>
             <span className="line"></span>
         </div>
 

@@ -39,3 +39,6 @@
 .navbar-scroll-color ul li{
     color: white;
 }
+.nav-item .active{
+    border-bottom: 1px solid lightblue;
+}

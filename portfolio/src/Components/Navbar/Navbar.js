@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './Navbar.css';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
 
@@ -18,13 +19,21 @@ const Navbar = () => {
         <nav className={navScrollColor ? "navbar-main navbar-scroll-color":"navbar-main"}>
             <ul>
                 <li className="nav-item">
+                <Link to="home" spy={true} smooth={true} offset={-100} duration={100} >
                     Home
+                </Link>
                 </li>
+
                 <li className="nav-item">
+                <Link to="about" spy={true} smooth={true} offset={-70} duration={100}>
                     About
+                </Link>
                 </li>
+
                 <li className="nav-item">
-                    Service
+                <Link to="service" spy={true} smooth={true} offset={-100} duration={100}>
+                    Services
+                </Link>
                 </li>
                 <li className="nav-item">
                     Career
@@ -35,8 +44,11 @@ const Navbar = () => {
                 <li className="nav-item">
                     Team
                 </li>
+
                 <li className="nav-item">
-                    Testimonial
+                <Link to="testimonials" spy={true} smooth={true} offset={-100} duration={100}>
+                    Testimonials
+                </Link>
                 </li>
                 <li className="nav-item">
                     Feedback
@@ -44,8 +56,11 @@ const Navbar = () => {
                 <li className="nav-item">
                     Contact
                 </li>
+
                 <li className="nav-item">
-                    Subscriptions
+                <Link to="subscribe" spy={true} smooth={true} offset={-100} duration={100}>
+                    Subscribe
+                </Link>
                 </li>
             </ul>
 

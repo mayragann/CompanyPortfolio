@@ -5,7 +5,7 @@ import Typewriter from "typewriter-effect";
 const Home = () => {
   return (
     <>
-      <div className="container-fluid home">
+      <div className="container-fluid home" id="home">
         <div className="container home-content">
           <h1>
             <Typewriter
