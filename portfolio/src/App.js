@@ -7,6 +7,7 @@ import Service from "./Components/Service/Service";
 import Testimonial from "./Components/Testimonial/Testimonial";
 import Subscription from "./Components/Subscription/Subscription";
 import ScrollToTop from "react-scroll-to-top";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Service />
       <Testimonial />
       <Subscription />
+      <Footer />
 
       <ScrollToTop
         smooth

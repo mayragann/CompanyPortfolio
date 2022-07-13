@@ -1,0 +1,19 @@
+.footer{
+    height: auto;
+    margin: 0px;
+    background-color: rgb(26, 4, 110);
+}
+.footer-about-section{
+    color: white;
+    
+
+}
+.social-icons {
+    display: flex;
+    cursor: pointer;
+    color: greenyellow;
+}
+
+.social-icons p{
+    margin-right: 10px
+}
