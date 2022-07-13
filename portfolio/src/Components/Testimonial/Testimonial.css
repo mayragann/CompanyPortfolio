@@ -7,7 +7,7 @@
     border-radius: 90px;
     object-fit: cover;
     margin-top: -50px;
-    border: 3px solid white;
+    border: 3px solid #2751d9;
 }
 .content-card{
     margin-top: 70px;
@@ -22,7 +22,7 @@
 .name{
     font-weight: 25px;
     font-size: 25px;
-    color:orange;
+    color:#2751d9;
     font-style: italic;
 }
 .content-card:hover{
@@ -30,7 +30,25 @@
     -moz-box-shadow: -13px 4px 8px 2px rgba(0,0,0,0.56); 
     box-shadow: -13px 4px 8px 2px rgba(0,0,0,0.56);
     transition-duration: 1s;
-    background-color:#ae3213;
+    background-color:rgb(26, 4, 110);
     color: white;
 }
 
+.load-more-button{
+    background-color: rgb(26, 4, 110);
+    width: 15%;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    display: table;
+    margin: 35px auto 20px auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.load-more-button:hover{
+    background-color:#2751d9;
+    width: 15%;
+    padding: 10px;
+    color: white;
+}

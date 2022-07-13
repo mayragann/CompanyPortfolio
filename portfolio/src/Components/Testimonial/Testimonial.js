@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Testimonial.css"
 
 const Testimonial = () => {
@@ -57,9 +57,71 @@ const Testimonial = () => {
             "name": "Daniel",
             "position": "Node.js Developer"
         },
+        {
+            "img":"https://images.unsplash.com/photo-1528375646295-6d6fdd3ba742?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1109&q=80",
+            "content": "It's not every day that I come across a super friendly and helpful designer",
+            "name": "Daniel",
+            "position": "Node.js Developer"
+        },
+        {
+            "img":"https://images.unsplash.com/photo-1528375646295-6d6fdd3ba742?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1109&q=80",
+            "content": "It's not every day that I come across a super friendly and helpful designer",
+            "name": "Daniel",
+            "position": "Node.js Developer"
+        },
+        {
+            "img":"https://images.unsplash.com/photo-1528375646295-6d6fdd3ba742?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1109&q=80",
+            "content": "It's not every day that I come across a super friendly and helpful designer",
+            "name": "Daniel",
+            "position": "Node.js Developer"
+        },
+        {
+            "img":"https://images.unsplash.com/photo-1528375646295-6d6fdd3ba742?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1109&q=80",
+            "content": "It's not every day that I come across a super friendly and helpful designer",
+            "name": "Daniel",
+            "position": "Node.js Developer"
+        },
+        {
+            "img":"https://images.unsplash.com/photo-1528375646295-6d6fdd3ba742?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1109&q=80",
+            "content": "It's not every day that I come across a super friendly and helpful designer",
+            "name": "Daniel",
+            "position": "Node.js Developer"
+        },
+        {
+            "img":"https://images.unsplash.com/photo-1528375646295-6d6fdd3ba742?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1109&q=80",
+            "content": "It's not every day that I come across a super friendly and helpful designer",
+            "name": "Daniel",
+            "position": "Node.js Developer"
+        },
+        {
+            "img":"https://images.unsplash.com/photo-1528375646295-6d6fdd3ba742?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1109&q=80",
+            "content": "It's not every day that I come across a super friendly and helpful designer",
+            "name": "Daniel",
+            "position": "Node.js Developer"
+        },
+        
+        {
+            "img":"https://images.unsplash.com/photo-1528375646295-6d6fdd3ba742?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1109&q=80",
+            "content": "It's not every day that I come across a super friendly and helpful designer",
+            "name": "Daniel",
+            "position": "Node.js Developer"
+        },
+        
+        {
+            "img":"https://images.unsplash.com/photo-1528375646295-6d6fdd3ba742?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1109&q=80",
+            "content": "It's not every day that I come across a super friendly and helpful designer",
+            "name": "Daniel",
+            "position": "Node.js Developer"
+        },
+        
         
 
     ]
+
+    const [showMorePost,setShowMorePost] = useState(6)
+    const loadMore = () => {
+        setShowMorePost((prev) => prev + 3);
+    };
   return (
     <div className='container testimonial-section'>
 
@@ -70,18 +132,23 @@ const Testimonial = () => {
         </div>
 
         <div className="row">
-            {data.map((item,index)=> (
+
+            {data.slice(0,showMorePost).map((item,index)=> (
                 <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12"> 
                    
                     <div className="content-card">
                         <img src={item.img} alt="Designer"/>
                         <p>{item.content}</p>
-                        <span className="name">{item.name}</span>
+                        <p><span className="name">{item.name}</span></p>
                         <p>{item.position}</p>
                     </div>
                 </div>
             ))}
 
+            {showMorePost>=data.length ? null : (
+                 <span className="load-more-button" onClick={loadMore}> Load More</span>
+            )}
+       
         </div>
     </div>
   )
