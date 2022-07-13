@@ -11,11 +11,9 @@ const Subscription = () => {
               <h5>Newsletter. Subscribe Today.</h5>
             </div>
             <div className="subscription-form">
-                <input 
-                    type="text"
-                    placeholder="Your Email"
-                />
+              <input type="text" placeholder="Your Email" />
             </div>
+            <div className="subscription-button"><p>Subscribe</p></div>
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 .subscription{
     height: 300px;
     color: white;
-    background-color: rgba(247, 58, 203, 0.571);
+    background-color: rgba(247, 58, 203, 0.743);
     position: relative;
     margin-top: 30px;
 }
@@ -32,4 +32,25 @@
     margin: 0 auto;
     border: 0px;
     width: 50%;
+    margin-top: 10px;
+}
+.subscription-button p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: black;
+    padding: 10px;
+    width: 50%;
+    font-size: 20px;
+    margin-top: 20px;
+    color: greenyellow;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.subscription-button p:hover{
+    border: 1px solid greenyellow;
+    background-color: white;
+    color: green;
+    transition: 2s;
 }
