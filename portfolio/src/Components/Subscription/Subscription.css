@@ -1,0 +1,35 @@
+.subscription{
+    height: 300px;
+    color: white;
+    background-color: rgba(247, 58, 203, 0.571);
+    position: relative;
+    margin-top: 30px;
+}
+.subscription:before{
+    content: "";
+    background: url("https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1244&q=80") no-repeat
+      center center/cover;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+}
+.subscription-title h5{
+    text-align: center;
+    padding: 20px;
+    color: rgb(132, 255, 0);
+    font-size: 20px;
+}
+.subscription-form input {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: 0px;
+    width: 50%;
+}
