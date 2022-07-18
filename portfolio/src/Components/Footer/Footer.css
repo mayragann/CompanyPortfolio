@@ -5,6 +5,7 @@
 }
 .footer-about-section{
     color: white;
+ 
     
 
 }
@@ -12,13 +13,40 @@
     display: flex;
     cursor: pointer;
     color: greenyellow;
+    
 }
 
 .social-icons p{
-    margin-right: 10px
+    margin-right: 10px;
+
+}
+
+.footer-service{
+    padding-bottom:40px;
 }
 .footer-item li {
     color: white;
     list-style-type: none;
     padding-top: 10px;
+}
+
+li {
+    --border-color: white;
+    --border-color2: rgb(10, 207, 75);
+    --border-width: 2px;
+    --bottom-distance: 0px;
+    display: block;
+    background-image: linear-gradient(var(--border-color), var(--border-color2));
+    background-size: 0% var(--border-width);
+    background-repeat: no-repeat;
+    transition: background-size 0.5s;
+}
+.footer-item li {
+    background-position: 0 calc(100% - var(--bottom-distance));
+    color: white;
+    width: fit-content;
+}
+.footer-item li:hover{
+    background-size: 100% var(--border-width);
+    cursor: pointer;
 }
