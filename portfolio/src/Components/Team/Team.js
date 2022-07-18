@@ -1,5 +1,7 @@
 import React from 'react'
 import "./Team.css"
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { AiOutlineTwitter} from "react-icons/ai";
 
 const Team = () => {
     const data =[
@@ -43,7 +45,7 @@ const Team = () => {
     ]
 
   return (
-    <div className="container team-members">
+    <div className="container team-members" id="team">
         <div className="section-title">
             <h5>Team Members</h5>
             <span className="line"></span>
@@ -59,6 +61,19 @@ const Team = () => {
                             <p>{item.content}</p>
                         </div>
                         <span className="line-for-team-members"></span>
+                        <div className="social-icons">
+                            <p>
+                                <FaFacebookF size={25} />
+                            </p>
+                            <p>
+                                <FaLinkedinIn size={25} />
+                            </p>
+                            <p>
+                                <AiOutlineTwitter size={25} />
+                            </p>
+
+                        </div>
+
                     </div>
 
                 </div>
