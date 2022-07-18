@@ -8,6 +8,7 @@ import Testimonial from "./Components/Testimonial/Testimonial";
 import Subscription from "./Components/Subscription/Subscription";
 import ScrollToTop from "react-scroll-to-top";
 import Footer from "./Components/Footer/Footer";
+import Team from "./Components/Team/Team";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Home />
       <About />
       <Service />
+      <Team />
       <Testimonial />
       <Subscription />
       <Footer />
