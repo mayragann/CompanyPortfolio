@@ -36,9 +36,40 @@ const Footer = () => {
               </span>
             </div>
           </div>
-          <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12"></div>
-          <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12"></div>
+
+          <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+          <div className="footer-service">
+          <h6 style={{ color: "white", marginTop: "20px" }}>Services</h6>
+          <div className="footer-item">
+            <li> Product Sort</li>
+            <li> Media Marketing</li>
+            <li> Innovation</li>
+            <li> Technology</li>
+            <li> Enviorment</li>
+          </div>
+
+
+            </div>
+          </div>
+
+          <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+          <div className="footer-service">
+          <h6 style={{ color: "white", marginTop: "20px" }}>Customer Care</h6>
+          <div className="footer-item">
+            <li> Login</li>
+            <li> My Account</li>
+            <li> Wishlist</li>
+            <li> FAQ</li>
+            <li> Contact Us</li>
+          </div>
+
+
+            </div>
+
+          </div>
+
         </div>
+
       </div>
     </div>
   );

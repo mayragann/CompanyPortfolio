@@ -17,3 +17,8 @@
 .social-icons p{
     margin-right: 10px
 }
+.footer-item li {
+    color: white;
+    list-style-type: none;
+    padding-top: 10px;
+}
