@@ -5,6 +5,22 @@
     height: 240px;
     cursor: pointer;
     object-fit: cover;
+    transition: transform 2s, filter 1.5s ease-in-out;
+    transform-origin: center;
+    filter:brightness(50%)
+}
+.line-for-team-members{
+    width: 170px;
+    display: block;
+    height: 1px;
+    margin: 2px auto;
+    background-color: rgb(16, 16,15);
+
+
+}
+.team-members-item:hover img{
+    filter:brightness(100%);
+    transform: scale(1.05);
 }
 .team-members-item{
     margin-top: 30px;
@@ -16,6 +32,13 @@
     -webkit-box-shadow: 5px 5px 8px 2px rgba(0,0,0,0.34); 
     -moz-box-shadow: -13px 4px 8px 2px rgba(0,0,0,0.56); 
     box-shadow: 5px 5px 8px 2px rgba(0,0,0,0.34);
+    cursor: pointer;
+}
+.card:hover{
+    -webkit-box-shadow: -13px 4px 8px 2px rgba(0,0,0,0.56); 
+    -moz-box-shadow: -13px 4px 8px 2px rgba(0,0,0,0.56); 
+    box-shadow: -13px 4px 8px 2px rgba(0,0,0,0.56);
+    transition-duration: 1s;
     cursor: pointer;
 }
 

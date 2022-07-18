@@ -58,6 +58,7 @@ const Team = () => {
                             <h6>{item.name}</h6>
                             <p>{item.content}</p>
                         </div>
+                        <span className="line-for-team-members"></span>
                     </div>
 
                 </div>
