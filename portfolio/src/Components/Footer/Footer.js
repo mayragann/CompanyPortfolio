@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
-import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
-import { BsTwitter, BsLinkedin } from "react-icons/bs";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { AiOutlineTwitter, AiOutlineInstagram} from "react-icons/ai";
 
 const Footer = () => {
   return (
@@ -13,22 +13,23 @@ const Footer = () => {
               <h6 style={{ color: "white", marginTop: "20px" }}>About</h6>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. 
               </p>
-              <span className="social-icons">
-                <p>
-                  <FaFacebookSquare size={30} />
-                </p>
-                <p>
-                  <FaInstagram size={30} />
-                </p>
-                <p>
-                  <BsTwitter size={30} />
-                </p>
-                <p>
-                  <BsLinkedin size={30} />
-                </p>
-              </span>
+              <div className="footer-social-icons">
+                            <p>
+                                <FaFacebookF size={25} />
+                            </p>
+                            <p>
+                                <FaLinkedinIn size={25} />
+                            </p>
+                            <p>
+                                <AiOutlineTwitter size={25} />
+                            </p>
+                            <p>
+                                <AiOutlineInstagram size={25} />
+                            </p>
+
+                        </div>
             </div>
           </div>
 

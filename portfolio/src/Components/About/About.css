@@ -6,6 +6,11 @@
         height:auto;
     }
 
+    .about-image img {
+        display:none;
+    }
+
+
 }
 .about-image img {
     border-radius: 190px;

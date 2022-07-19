@@ -10,16 +10,29 @@
     
 
 }
-.social-icons {
+.footer-social-icons {
     display: flex;
-    cursor: pointer;
-    color: greenyellow;
+    justify-content: left;
     
 }
 
-.social-icons p{
+.footer-social-icons p{
+    height: 40px;
+    width: 40px;
+    background-color:yellowgreen;
+    color: rgb(26, 4, 110);
+    border-radius: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 10px;
+    cursor: pointer;
 
+}
+.footer-social-icons p:hover{
+    background-color:rgb(33, 187, 234);
+    cursor: pointer;
+    transition-duration: .05s;
 }
 
 .footer-service{
