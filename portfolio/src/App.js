@@ -11,6 +11,7 @@ import Footer from "./Components/Footer/Footer";
 import Team from "./Components/Team/Team";
 import Feedback from "./Components/Feedback/Feedback";
 import Video from "./Components/Video/Video";
+import Career from "./Components/Career/Career";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Home />
       <About />
       <Service />
+      <Career />
       <Video />
       <Team />
       <Testimonial />
