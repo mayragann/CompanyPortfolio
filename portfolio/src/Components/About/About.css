@@ -1,6 +1,12 @@
 .about-section{
     height:900px;
 }
+@media (max-width:1000px){
+    .about-section{
+        height:auto;
+    }
+
+}
 .about-image img {
     border-radius: 190px;
     margin-top: 160px;

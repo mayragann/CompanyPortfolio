@@ -1,6 +1,26 @@
 .testimonial-section{
     height: auto;
 }
+
+@media (max-width:1000px){
+    .testimonial-section{
+        margin-top:25px;
+    }
+
+    .load-more-button{
+        background-color: rgb(26, 4, 110);
+        width: auto;
+        padding: 10px;
+        color: white;
+        text-align: center;
+        justify-content: center;
+        display: table;
+        margin: 35px auto 20px auto;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+}
 .content-card img{
     height: 80px;
     width: 80px;

@@ -145,11 +145,12 @@ const Testimonial = () => {
                 </div>
             ))}
 
-            {showMorePost>=data.length ? null : (
-                 <span className="load-more-button" onClick={loadMore}> Load More</span>
-            )}
+
        
         </div>
+        {showMorePost>=data.length ? null : (
+                 <span className="load-more-button" onClick={loadMore}> Load More</span>
+            )}
     </div>
   )
 }

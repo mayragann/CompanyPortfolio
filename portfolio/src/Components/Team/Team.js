@@ -53,7 +53,7 @@ const Team = () => {
 
         <div className="row">
             {data.map((item,index) => (
-                <div className="col-xl-4 col-lg-4 col-md-2 col-sm-12" key={index}>
+                <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12" key={index}>
                     <div className="card team-members-item">
                         <img src={item.img} alt="team member" />
                         <div className="team-info">
