@@ -2,5 +2,27 @@
     height: 900px;
 }
 .video-details{
-    margin: 10px;
+    margin: 15px;
+
+    -webkit-box-shadow: 5px 5px 8px 2px rgba(0,0,0,0.34); 
+    -moz-box-shadow: -13px 4px 8px 2px rgba(0,0,0,0.56); 
+    box-shadow: 5px 5px 8px 2px rgba(0,0,0,0.34);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.video-details:hover{
+    -webkit-box-shadow: -13px 4px 8px 2px rgba(0,0,0,0.56); 
+    -moz-box-shadow: -13px 4px 8px 2px rgba(0,0,0,0.56); 
+    box-shadow: -13px 4px 8px 2px rgba(0,0,0,0.56);
+    transition-duration: 1s;
+    border-bottom: 3px solid purple;
+    cursor: pointer;
+}
+
+
+
+.video-content{
+    padding: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
