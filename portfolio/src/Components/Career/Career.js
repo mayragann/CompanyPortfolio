@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Career.css";
 import DataInfo from "./DataInfo";
+import Pagination from "../Pagination/Pagination";
 
 const Career = () => {
   const url = "https://jsonplaceholder.typicode.com/posts";
@@ -56,6 +57,9 @@ const Career = () => {
         ))};
 
 
+      </div>
+      <div className="pagination-details">
+        <Pagination handlePageClick={handlePageClick} pageCount={pageCount}/>
       </div>
     </div>
   );
