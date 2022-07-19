@@ -10,6 +10,7 @@ import ScrollToTop from "react-scroll-to-top";
 import Footer from "./Components/Footer/Footer";
 import Team from "./Components/Team/Team";
 import Feedback from "./Components/Feedback/Feedback";
+import Video from "./Components/Video/Video";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Home />
       <About />
       <Service />
+      <Video />
       <Team />
       <Testimonial />
       <Feedback />
