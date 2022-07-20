@@ -1,12 +1,40 @@
 .mobile-view-header{
     width: 100%;
-    background-color: aqua;
-    color: black;
-    margin-top: 10px;
+    background-color:#2751d9;
     color:black;
+    height: 50px;
+    display: flex;
+  
+    align-items: center;
+
     -webkit-box-shadow: 5px 5px 8px 2px rgba(0,0,0,0.34); 
     -moz-box-shadow: -13px 4px 8px 2px rgba(0,0,0,0.56); 
     box-shadow: 5px 5px 8px 2px rgba(0,0,0,0.34);
+}
+.responsive-mobile-view{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.mobile-view-header p svg {
+    color: white;
+    cursor: pointer;
+    margin-top:15px;
+
+}
+
+.mobile-nav{
+    height: auto;
+    margin-top:15px;
+    width: 210px;
+    background-color: #2751d9;
+    top: 0;
+    z-index: 1;
+}
+.mobile-nav ul li {
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 @media (min-width:900px){
