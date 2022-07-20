@@ -3,6 +3,9 @@
     margin-top: 60px;
     margin-bottom: 100px;
 }
+#dark .feedback-slider{
+    color:white;
+}
 
 .content-slider{
     padding: 10px;

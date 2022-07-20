@@ -4,6 +4,14 @@
     margin-bottom: 75px;
     
 }
+#dark .team-members{
+    color: white;
+
+}
+#dark .team-members-item{
+    background-color: rgb(26, 4, 110);
+}
+
 @media (max-width:1000px){
     .team-members{
         height: auto;
@@ -25,6 +33,9 @@
     margin: 2px auto;
     background-color: rgb(16, 16,15);
 }
+#dark .line-for-team-members{
+    background-color: #6d8ffe;
+}
 
 .social-icons{
     display: flex;
@@ -42,6 +53,15 @@
     align-items: center;
     margin: 15px
 }
+#dark .social-icons p {
+    color: rgb(26, 4, 110);
+    background-color:#6d8ffe;
+}
+#dark .social-icons p:hover{
+    color: rgb(26, 4, 110);
+    background-color:#6dfe79;
+}
+
 
 .social-icons p:hover{
     background-color:rgb(26, 4, 110);

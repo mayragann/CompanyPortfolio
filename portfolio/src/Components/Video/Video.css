@@ -2,6 +2,16 @@
   height: 900px;
   margin-top: 20px;
 }
+#dark .video{
+  color:white;
+}
+
+#dark .video-details {
+  background-color: rgb(26, 4, 110);
+  color: white;
+
+}
+
 
 @media (max-width: 1000px) {
   .video {
