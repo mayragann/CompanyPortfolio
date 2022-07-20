@@ -1,6 +1,6 @@
 .mobile-view-header{
     width: 100%;
-    background-color:#2751d9;
+    background-color: rgb(26, 4, 110);
     color:black;
     height: 50px;
     display: flex;
@@ -27,7 +27,7 @@
     height: auto;
     margin-top:15px;
     width: 210px;
-    background-color: #2751d9;
+    background-color:  rgb(26, 4, 110);
     top: 0;
     z-index: 1;
 }
