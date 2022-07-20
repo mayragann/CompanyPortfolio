@@ -10,8 +10,12 @@
     text-align: center;
     justify-content: right;
     z-index: 1;
-    
+}
 
+@media (max-width:1000px){
+    .navbar-main{
+        display: none;
+    }
 
 }
 

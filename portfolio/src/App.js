@@ -12,11 +12,13 @@ import Team from "./Components/Team/Team";
 import Feedback from "./Components/Feedback/Feedback";
 import Video from "./Components/Video/Video";
 import Career from "./Components/Career/Career";
+import NavbarMobileView from "./Components/NavbarMobileView/NavbarMobileView";
 
 function App() {
   return (
     <div>
       <Navbar />
+      <NavbarMobileView />
       <Home />
       <About />
       <Service />
