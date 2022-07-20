@@ -2,12 +2,17 @@ import React from "react";
 import "./Footer.css";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineTwitter, AiOutlineInstagram} from "react-icons/ai";
+import Zoom from 'react-reveal/Zoom';
 
 const Footer = () => {
   return (
     <div className="container-fluid footer">
       <div className="container">
         <div className="row">
+
+        <Zoom left>
+
+   
           <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12">
             <div className="footer-about-section">
               <h6 style={{ color: "white", marginTop: "20px" }}>About</h6>
@@ -60,7 +65,10 @@ const Footer = () => {
               </div>
             </div>
           </div>
+          </Zoom>
         </div>
+
+
       </div>
     </div>
   );

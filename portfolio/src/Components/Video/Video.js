@@ -1,6 +1,7 @@
 import React from "react";
 import "./Video.css";
 import ReactPlayer from "react-player";
+import Zoom from 'react-reveal/Zoom';
 
 const Video = () => {
   const data = [
@@ -54,6 +55,7 @@ const Video = () => {
 
       <div className="row" >
         {data.map((item, index) => (
+          <Zoom>
           <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12" key={index} id="video">
             <div className="video-details">
               <ReactPlayer
@@ -70,6 +72,7 @@ const Video = () => {
               </div>
             </div>
           </div>
+          </Zoom>
         ))}
       </div>
     </div>

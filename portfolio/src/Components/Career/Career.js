@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Career.css";
 import DataInfo from "./DataInfo";
 import Pagination from "../Pagination/Pagination";
+import Fade from 'react-reveal/Fade';
 
 const Career = () => {
   const url = "https://jsonplaceholder.typicode.com/posts";
@@ -49,18 +50,23 @@ const Career = () => {
       </div>
       <div className="row">
         {data && currentPageData.map((item,index)=>(
+          <Fade left>
             <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12" >
                 <DataInfo key={index} {...item}/>
                 
 
             </div>
+            </Fade>
         ))}
 
 
       </div>
+
+      <Fade right>
       <div className="pagination-details">
         <Pagination handlePageClick={handlePageClick} pageCount={pageCount}/>
       </div>
+      </Fade>
     </div>
   );
 };

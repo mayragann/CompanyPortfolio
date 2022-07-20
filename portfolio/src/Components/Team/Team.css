@@ -1,6 +1,8 @@
 .team-members{
-    height: 1200px;
+    height: auto;
     margin-top: 30px;
+    margin-bottom: 75px;
+    
 }
 @media (max-width:1000px){
     .team-members{

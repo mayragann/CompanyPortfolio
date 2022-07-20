@@ -1,11 +1,14 @@
 import React from "react";
 import "./Home.css";
 import Typewriter from "typewriter-effect";
+import Fade from 'react-reveal/Fade';
 
 const Home = () => {
   return (
     <>
       <div className="container-fluid home" id="home">
+
+        <Fade left>
         <div className="container home-content">
           <h1>
             <Typewriter
@@ -28,6 +31,8 @@ const Home = () => {
           </p>
           <span className="view-details-home-button">View Details</span>
         </div>
+
+        </Fade>
       </div>
     </>
   );

@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import "./Testimonial.css"
+import Fade from 'react-reveal/Fade';
+import Bounce from 'react-reveal/Bounce';
 
 const Testimonial = () => {
     const data = [
@@ -134,6 +136,7 @@ const Testimonial = () => {
         <div className="row">
 
             {data.slice(0,showMorePost).map((item,index)=> (
+                <Fade right>
                 <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12" key={index}> 
                    
                     <div className={index===0 ? "marked-content-card":"content-card"}>
@@ -143,13 +146,15 @@ const Testimonial = () => {
                         <p>{item.position}</p>
                     </div>
                 </div>
+                </Fade>
             ))}
 
 
        
         </div>
         {showMorePost>=data.length ? null : (
-                 <span className="load-more-button" onClick={loadMore}> Load More</span>
+             <Bounce left>
+                 <span className="load-more-button" onClick={loadMore}> Load More</span> </Bounce>
             )}
     </div>
   )
