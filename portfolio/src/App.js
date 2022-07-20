@@ -1,5 +1,5 @@
-import React from "react";
-import "./App.css"
+import React, { useState, createContext } from "react";
+import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
@@ -14,12 +14,26 @@ import Video from "./Components/Video/Video";
 import Career from "./Components/Career/Career";
 import NavbarMobileView from "./Components/NavbarMobileView/NavbarMobileView";
 
+export const ThemeContext = createContext(null)
+
 function App() {
+
+
+  const [theme, setTheme] = useState("light");
+
+  const handleChangeTheme = () =>{
+    setTheme((current)=>(current === "light" ? "dark":"light"))
+  }
+
   return (
-    <div>
+    <ThemeContext.Provider value={{theme, handleChangeTheme}}>
+
+
       <Navbar />
       <NavbarMobileView />
       <Home />
+
+      <div className="main-theme-compo" id={theme}>
       <About />
       <Service />
       <Career />
@@ -27,6 +41,9 @@ function App() {
       <Team />
       <Testimonial />
       <Feedback />
+      </div>
+
+
       <Subscription />
       <Footer />
 
@@ -37,7 +54,7 @@ function App() {
         width="20"
         style={{ borderRadius: "90px", backgroundColor: "#2751d9" }}
       />
-    </div>
+    </ThemeContext.Provider>
   );
 }
 
