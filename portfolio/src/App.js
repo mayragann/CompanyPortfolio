@@ -30,7 +30,7 @@ function App() {
 
 
       <Navbar />
-      <NavbarMobileView />
+      <NavbarMobileView theme={theme} handleChangeTheme={handleChangeTheme}/>
       <Home theme={theme} handleChangeTheme={handleChangeTheme}/>
 
       <div className="main-theme-compo" id={theme}>

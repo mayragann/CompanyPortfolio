@@ -66,3 +66,11 @@
   cursor: pointer;
   z-index: 1;
 }
+
+@media (max-width:1000px){
+ .theme-change{
+  display: none;
+ }
+
+
+}
