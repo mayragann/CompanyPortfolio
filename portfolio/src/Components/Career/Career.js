@@ -42,7 +42,7 @@ const Career = () => {
 
 
   return (
-    <div className="container career">
+    <div className="container career" id="career">
       <div className="section-title">
         <h5>Career</h5>
         <span className="line"></span>
@@ -54,7 +54,7 @@ const Career = () => {
                 
 
             </div>
-        ))};
+        ))}
 
 
       </div>

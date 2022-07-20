@@ -1,0 +1,112 @@
+.pagination{
+    display: flex;
+    justify-content: center;
+    padding:10px;
+    align-items: center;
+    color: black;
+    margin:10px;
+
+}
+.pagination a{
+    text-decoration: none;
+    list-style: none;
+    color:black;
+}
+
+.pagination__link--active{
+    border: 1px solid white;
+    padding: 10px;
+    background-color: black;
+}
+
+.pagination__link--active a{
+    color:white;
+}
+.pagination-design {
+    display: flex;
+    list-style-type: none;
+    margin: 5px;
+    padding: 7px;
+    height: 30px;
+    width:30px;
+    border-radius: 90px;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.pagination-design a:hover{
+    display: flex;
+    background-color: black;
+    list-style-type: none;
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    height: 30px;
+    width:30px;
+    border-radius: 90px;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.break-class{
+    display: flex;
+    border: 1px solid black;
+    list-style-type: none;
+    margin: 5px;
+    padding: 7px;
+    height: 30px;
+    width:30px;
+    border-radius: 90px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.break-class:hover{
+    background-color: black;
+    color:white;
+    cursor: pointer;
+}
+
+.previous-button{
+    display: flex;
+    list-style-type: none;
+    margin: 5px;
+    padding: 7px;
+    height: 30px;
+    width:90px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.next-button{
+    display: flex;
+    list-style-type: none;
+    margin: 5px;
+    padding: 7px;
+    height: 30px;
+    width:90px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.pagination__link--disabled{
+    display:none;
+}
+
+.pagination-details{
+    margin-top: 10px;
+    color:black;
+    -webkit-box-shadow: 5px 5px 8px 2px rgba(0,0,0,0.34); 
+    -moz-box-shadow: -13px 4px 8px 2px rgba(0,0,0,0.56); 
+    box-shadow: 5px 5px 8px 2px rgba(0,0,0,0.34);
+}
