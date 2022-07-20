@@ -13,6 +13,7 @@ import Feedback from "./Components/Feedback/Feedback";
 import Video from "./Components/Video/Video";
 import Career from "./Components/Career/Career";
 import NavbarMobileView from "./Components/NavbarMobileView/NavbarMobileView";
+import Contact from "./Components/Contact/Contact";
 
 export const ThemeContext = createContext(null)
 
@@ -41,6 +42,7 @@ function App() {
       <Team />
       <Testimonial />
       <Feedback />
+      <Contact />
       </div>
 
 
