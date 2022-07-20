@@ -31,7 +31,7 @@ function App() {
 
       <Navbar />
       <NavbarMobileView />
-      <Home />
+      <Home theme={theme} handleChangeTheme={handleChangeTheme}/>
 
       <div className="main-theme-compo" id={theme}>
       <About />
