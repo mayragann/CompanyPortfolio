@@ -88,7 +88,17 @@ const NavbarMobileView = ({theme,handleChangeTheme}) => {
             Feedback
           </Link>
         </li>
-        <li className="nav-item">Contact</li>
+        <li className="nav-item">
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={100}
+          >
+            Contact
+          </Link>
+        </li>
 
         <li className="nav-item">
           <Link

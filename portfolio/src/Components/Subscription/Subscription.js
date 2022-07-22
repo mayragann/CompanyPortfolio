@@ -1,6 +1,7 @@
 import React from "react";
 import "./Subscription.css";
 import Fade from 'react-reveal/Fade';
+import { FiSend } from 'react-icons/fi';
 
 const Subscription = () => {
   return (
@@ -15,7 +16,7 @@ const Subscription = () => {
             <div className="subscription-form">
               <input type="text" placeholder="Your Email" />
             </div>
-            <div className="subscription-button"><p>Subscribe</p></div>
+            <div className="subscription-button"><p>Subscribe <FiSend size={20}/></p></div>
           </div>
           </Fade>
         </div>
