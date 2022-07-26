@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 8000;
 
 require("dotenv").config();
 
-const transporte = nodemailer.createTransport(
+const transport = nodemailer.createTransport(
   sendgridTransport({
     auth: {
       api_key: process.env.SENDGRID_API,
@@ -16,37 +16,49 @@ const transporte = nodemailer.createTransport(
   })
 );
 
-// parse application/x-www-form-urlencoded
+
+app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
-// parse application/json
-app.use(bodyParser.json())
 
 app.post("/sendmail", (req, res) => {
   const { name, email, servicetype, message } = req.body;
 
-  transporte.sendMail({
+  if(!name){
+    return res.status(400).json({error: "Please add your name"})
+  }
+  if(!email){
+    return res.status(400).json({error: "Please add your email"})
+  }
+  if(!servicetype){
+    return res.status(400).json({error: "Please add what service is requested"})
+  }
+  if(!message){
+    return res.status(400).json({error: "Please add your message"})
+  }
+
+  transport.sendMail({
     to: "mayragann@gmail.com",
     from: "mayragann@gmail.com",
     subject: "Service Request from Customer",
     html: `
             <h4>Customer Details</h4>
             <ul>
-            <li>Name:${name}</li>
+            <li>Name: ${name}</li>
 
-            <li>Email:${email}</li>
+            <li>Email: ${email}</li>
 
-            <li>Service Requested:${servicetype}</li>
+            <li>Service Requested: ${servicetype}</li>
 
-            <li>Message:${message}</li>
+            <li>Message: ${message}</li>
 
             </ul>
         `
   })
 
-  res.json({name, email, servicetype, message });
+  res.json();
 
-});
+})
 
 app.listen(PORT, (req, res) => {
   console.log("Server Connected");

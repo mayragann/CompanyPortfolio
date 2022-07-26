@@ -1,10 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
-import { FiSend } from 'react-icons/fi';
-
-
+import { FiSend } from "react-icons/fi";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [servicetype, setServiceType] = useState("");
+  const [message, setMessage] = useState("");
+
+  const sendEmailInfo = () => {
+    fetch("http://localhost:8000/sendmail", {
+      method: "POST",
+      mode: 'cors',
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body:JSON.stringify({
+        name,
+        email,
+        servicetype,
+        message,
+      }),
+    })
+      .then((res) => res.json())
+      .then((result) => {
+        if(result.error){
+          console.log(result.error)
+        }
+
+      }).catch(err=>{
+        console.log(err)
+      })
+  };
   return (
     <div className="container contact-section" id="contact">
       <div className="row">
@@ -25,17 +54,31 @@ const Contact = () => {
             <form>
               <div className="contact-form">
                 <label className="form-label">Name</label>
-                <input type="text" className="form-control" />
+                <input
+                  type="text"
+                  className="form-control"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
               </div>
 
               <div className="contact-form">
                 <label className="form-label">Email</label>
-                <input type="text" className="form-control" />
+                <input
+                  type="text"
+                  className="form-control"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
               </div>
 
               <div className="contact-form">
                 <label className="form-label">Services Needed</label>
-                <select className="custom-select">
+                <select
+                  className="custom-select"
+                  value={servicetype}
+                  onChange={(e) => setServiceType(e.target.value)}
+                >
                   <option>Web Develepment</option>
                   <option>Mobile Develepment</option>
                   <option>UI/UX Develepment</option>
@@ -50,16 +93,17 @@ const Contact = () => {
                   maxLength="500"
                   className="form-control"
                   rows="4"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                 />
               </div>
 
-              <div className="button-submit">
-                <p>Submit <FiSend size={20}/></p>
+              <div className="button-submit" onClick={sendEmailInfo}>
+                <p>
+                  Submit <FiSend size={20} />
+                </p>
               </div>
-
             </form>
-
-
           </div>
         </div>
       </div>
