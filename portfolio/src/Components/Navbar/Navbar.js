@@ -105,17 +105,7 @@ const Navbar = () => {
           </Link>
         </li>
 
-        <li className="nav-item">
-          <Link
-            to="subscribe"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={100}
-          >
-            Subscribe
-          </Link>
-        </li>
+
       </ul>
     </nav>
   );

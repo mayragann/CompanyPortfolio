@@ -100,17 +100,7 @@ const NavbarMobileView = ({theme,handleChangeTheme}) => {
           </Link>
         </li>
 
-        <li className="nav-item">
-          <Link
-            to="subscribe"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={100}
-          >
-            Subscribe
-          </Link>
-        </li>
+
         <li>
           <Switch onChange={handleChangeTheme} checked={theme === "light"} />
         </li>
