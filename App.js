@@ -1,7 +1,8 @@
 const express = require("express");
 const app = express();
-const bodyParser = require('body-parser')
+const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
+const cors = require("cors");
 
 const sendgridTransport = require("nodemailer-sendgrid-transport");
 const PORT = process.env.PORT || 8000;
@@ -16,25 +17,26 @@ const transport = nodemailer.createTransport(
   })
 );
 
-
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended: true }))
-
+app.use(cors());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post("/sendmail", (req, res) => {
   const { name, email, servicetype, message } = req.body;
 
-  if(!name){
-    return res.status(400).json({error: "Please add your name"})
+  if (!name) {
+    return res.status(400).json({ error: "Please add your name" });
   }
-  if(!email){
-    return res.status(400).json({error: "Please add your email"})
+  if (!email) {
+    return res.status(400).json({ error: "Please add your email" });
   }
-  if(!servicetype){
-    return res.status(400).json({error: "Please add what service is requested"})
+  if (!servicetype) {
+    return res
+      .status(400)
+      .json({ error: "Please add what service is requested" });
   }
-  if(!message){
-    return res.status(400).json({error: "Please add your message"})
+  if (!message) {
+    return res.status(400).json({ error: "Please add your message" });
   }
 
   transport.sendMail({
@@ -53,12 +55,10 @@ app.post("/sendmail", (req, res) => {
             <li>Message: ${message}</li>
 
             </ul>
-        `
-  })
-
-  res.json();
-
-})
+        `,
+  });
+  res.json({ success: "Email has been sent" });
+});
 
 app.listen(PORT, (req, res) => {
   console.log("Server Connected");
