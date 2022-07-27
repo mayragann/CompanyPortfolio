@@ -17,6 +17,18 @@
     top: 0;
     z-index: -1;
 }
+.theme-icon{
+  animation: rotation infinite 9s linear;
+}
+
+@keyframes rotation {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
 
 .home-content {
     height: 100%;

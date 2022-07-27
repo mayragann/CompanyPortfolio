@@ -14,7 +14,7 @@ const Home = ({ theme, handleChangeTheme }) => {
               <BsMoonStarsFill size={40} />
             </p>
           ) : (
-            <p>
+            <p className="theme-icon">
               <BsFillSunFill size={40} />
             </p>
           )}
